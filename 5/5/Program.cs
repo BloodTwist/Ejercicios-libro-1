@@ -10,13 +10,13 @@ namespace _5
 
         public static float ObtenerFahrenheit(float gradosC)
         {
-            float res = 9f/5f *gradosC+ 32;
+            float res = 9/5; 
             /*La explicación del porqué el "9/5" se tiene que usar la letra "f", se debe al identificador
              este nos dice que tomará un dato de coma flotante, de este modo no se puede poner 1.8 (Solución de 9/5) 
-             porque estamos diciendo que el dato es del tipo double, lo que crea conflictos. Asi que, la mejor solución es
-             hacer un "cast"*/
+             porque estamos diciendo que el dato es del tipo int, lo que crea conflictos. Asi que, la mejor solución es
+             hacer un "cast" con float, por eso la "f" */
 
-            return res;
+            return res * gradosC + 32; ;
         }
 
         static void Main(string[] args)
