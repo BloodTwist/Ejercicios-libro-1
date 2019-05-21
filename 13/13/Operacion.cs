@@ -7,7 +7,7 @@ namespace _13
     class Operacion
     {
 
-        int mod5, mod2, a, b, inicio, fin;
+        int mod5, mod2, a, b, inicio, fin , sum=0;
         public void Condicion (int a, int b)
         {
 
@@ -22,6 +22,7 @@ namespace _13
                     if ((mod5 == 0) && (i != 0))
                     {
                         Console.WriteLine($"Núm {i}");
+                        sum += i;
                     }
 
                 }
@@ -45,7 +46,7 @@ namespace _13
 
             }
 
-
+            Console.WriteLine($"El resultado de la sumatoria es: {sum}");
         }
 
     }
